@@ -3,9 +3,11 @@
 Bem-vindo ao projeto Authenticator Antics, onde a diversão e a segurança andam de mãos dadas! Nosso objetivo é transformar a autenticação e autorização em uma experiência tão robusta quanto uma fortaleza, mas com um toque de diversão e travessuras.
 
 ## Nossa Missão
+
 Estamos aqui para construir uma solução de autenticação e autorização que não só mantém seus dados protegidos, mas também traz um sorriso ao seu rosto. Imagina um sistema onde o gerenciamento de Usuários, Perfis e Permissões é tão simples quanto contar até três, mas tão seguro quanto um cofre de banco.
 
 ## Funcionalidades
+
 Gestão de Usuários: Porque todo mundo merece ser tratado como VIP, mas só com a permissão certa!
 
 Perfis e Permissões: Administração detalhada de acesso, tão fácil quanto escolher seu sabor de sorvete favorito.
@@ -13,12 +15,12 @@ Perfis e Permissões: Administração detalhada de acesso, tão fácil quanto es
 Métodos de Autenticação: Desde o tradicional login e senha até as tecnologias mais avançadas – estamos sempre um passo à frente dos vilões digitais.
 
 ## Nosso Toque de Humor
+
 A equipe Authenticator Antics é composta por mestres em segurança com um senso de humor afiado. No nosso repositório GitHub, Authenticator Antics, você encontrará não apenas código de qualidade, mas também piadas escondidas e trocadilhos que vão tornar seu dia mais leve.
 
 ## Junte-se à Diversão
-Seja você um usuário ou desenvolvedor, venha participar da nossa missão. Estamos aqui para garantir que a segurança digital nunca mais seja chata!
 
-Espero que isso capture o espírito divertido que você está procurando! Se precisar de mais alguma coisa ou de outro ajuste, estou aqui para ajudar! 😄🔐🎉
+Seja você um usuário ou desenvolvedor, venha participar da nossa missão. Estamos aqui para garantir que a segurança digital nunca mais seja chata!
 
 # Especificação de Projeto de Autenticação e Autorização
 
