@@ -1,0 +1,84 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                      String       @id @default(uuid())
+  full_name               String
+  email                   String       @unique
+  password                String
+  telephone               String
+  active                  Boolean      @default(true)
+  auth_2fa                Boolean      @default(true)
+  image                   String?
+  password_recovery_token String?
+  data_recovery_token     String?
+  createdAt               DateTime     @default(now())
+  updatedAt               DateTime     @updatedAt
+
+  userProfiles            UserProfile[] // Relacionamento com a tabela intermediária
+
+  @@map("users")
+}
+model Profile {
+  id          String        @id @default(uuid())
+  name        String        @unique
+  description String
+  active      Boolean       @default(true)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  userProfiles       UserProfile[] // Relacionamento com a tabela intermediária
+  profilePermissions ProfilePermission[] // Relacionamento com a tabela intermediária
+
+  @@map("profiles")
+}
+
+model UserProfile {
+  id         String   @id @default(uuid())
+  userId     String
+  profileId  String
+  assignedAt DateTime @default(now()) // Campo adicional, exemplo: quando o perfil foi atribuído
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  profile Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, profileId]) // Garante que cada par user-profile seja único
+  @@map("user_profiles") // Nome da tabela intermediária no banco
+}
+
+model Permission {
+  id          String        @id @default(uuid())
+  name        String        @unique
+  description String
+  active      Boolean       @default(true)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  profilePermissions ProfilePermission[] // Relacionamento com a tabela intermediária
+
+  @@map("permissions")
+}
+
+// Tabela intermediária para o relacionamento entre Profile e Permission
+model ProfilePermission {
+  id          String     @id @default(uuid())
+  profileId   String
+  permissionId String
+  assignedAt  DateTime @default(now()) // Campo adicional, exemplo: quando o perfil foi atribuído
+  profile     Profile    @relation(fields: [profileId], references: [id])
+  permission  Permission @relation(fields: [permissionId], references: [id])
+
+  @@unique([profileId, permissionId]) // Garante que cada par profile-permission seja único
+  @@map("profile_permissions") // Nome da tabela intermediária no banco
+}
