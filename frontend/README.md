@@ -1,41 +1,36 @@
-# Authenticator Antics Frontend
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Bem-vindo ao projeto **Authenticator Antics**, onde a diversão e a segurança andam de mãos dadas! 🎨🔐
+## Getting Started
 
-## Descrição Divertida
+First, run the development server:
 
-No projeto Authenticator Antics, a nossa missão é criar interfaces de autenticação e autorização que não só protegem os dados dos usuários, mas também trazem alegria e simplicidade à experiência de uso. Com um toque de cor e uma pitada de humor, estamos transformando a segurança digital em algo prazeroso.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Nossa Missão
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Estamos aqui para desenvolver interfaces que são tão intuitivas quanto seguras. Imagine uma aplicação onde o gerenciamento de Usuários, Perfis e Permissões é tão fácil quanto deslizar para a direita – e tão seguro quanto uma fortaleza medieval.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Funcionalidades
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- **Design User-Friendly**: Interfaces bonitas e intuitivas que qualquer um pode usar.
-- **Perfis e Permissões**: Controle de acesso detalhado sem complicações.
-- **Métodos de Autenticação Modernos**: Login tradicional, autenticação multifator e o que há de mais moderno em segurança.
+## Learn More
 
-## Nosso Toque de Humor
+To learn more about Next.js, take a look at the following resources:
 
-A equipe **Authenticator Antics Frontend** é formada por desenvolvedores que entendem que a vida é melhor com um pouco de diversão. No nosso repositório GitHub, **Authenticator Antics**, você encontrará não apenas código limpo e eficiente, mas também Easter eggs e surpresas escondidas para alegrar seu dia.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Junte-se à Diversão
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Seja você um usuário ou desenvolvedor, venha participar da nossa missão. Estamos aqui para garantir que a segurança digital seja não só eficiente, mas também divertida!
+## Deploy on Vercel
 
-## Como Contribuir
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-1. Clone o repositório: `git clone https://github.com/AuthenticatorAntics/AuthenticatorAntics-Frontend.git`
-2. Crie sua branch: `git checkout -b minha-nova-branch`
-3. Faça suas alterações e comite: `git commit -m 'Descrição das alterações'`
-4. Envie para o repositório remoto: `git push origin minha-nova-branch`
-5. Abra um Pull Request
-
-## Contato
-
-Para mais informações ou perguntas, entre em contato com a equipe Authenticator Antics no e-mail: [henrique.simoes@outlook.com](mailto:henrique.simoes@outlook.com)
-
----
-
-Esperamos que você se divirta tanto quanto nós ao trabalhar neste projeto! 😄🔐🎨
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
